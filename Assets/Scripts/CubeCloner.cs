@@ -25,7 +25,7 @@ public class CubeCloner : MonoBehaviour
                 var cubeClone = Instantiate(cubeOriginal, new Vector3(xPositionOffSet + k, cubeOriginal.transform.position.y, i)
                     ,cubeOriginal.transform.rotation, cubeContainer.transform);
                 
-                cubeClone.name = "CubeClone" + ((k * i) + 1);
+                cubeClone.name = "CubeClone" + (k+i);
             }   
         }
     }
